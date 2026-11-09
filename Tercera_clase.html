@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tercera clase - Julio</title>
+    <style>
+        body {
+            background-color: black;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tercera clase</h1>
+    <h2>Mi horario</h2>
+    <hr>
+    <table border="1">
+        <caption>Horario de clases</caption>
+        <thead>
+            <tr>
+                <th>Materia</th>
+                <th>Horario</th>
+                <th>Modalidad</th>
+                <th>Código de Salón</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Matemáticas</td>
+                <td>10:00 am</td>
+                <td>Virtual</td>
+                <td>0880</td>
+            </tr>
+            <tr>
+                <td>Lengua Española</td>
+                <td>07:00 pm</td>
+                <td>Presencial</td>
+                <td>0732</td>
+            </tr>
+            <tr>
+                <td>Artística</td>
+                <td>09:00 am</td>
+                <td>Virtual</td>
+                <td>3493</td>
+            </tr>
+            <tr>
+                <td>Ética 1</td>
+                <td>05:00 pm</td>
+                <td>Virtual</td>
+                <td>9392</td>
+            </tr>
+            <tr>
+                <td>Sociales</td>
+                <td>06:00 pm</td>
+                <td>Presencial</td>
+                <td>0320</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h2>Registro</h2>
+    <hr>
+    <form action="Lugarsecreto" id="Enviar-Mensaje">
+        <p>
+            <label for="Nombre">Nombre:</label>
+            <input type="text" id="Nombre" name="Nombre" placeholder="Ingresa tu nombre..." required>
+        </p>
+        <p>
+            <label for="Correo">Correo:</label>
+            <input type="email" id="Correo" name="Correo" placeholder="Ingresa tu Correo..." required>
+        </p>
+        <p>
+            <label for="Contrasena">Contraseña:</label>
+            <input type="password" id="Contrasena" name="Contrasena">
+        </p>
+        <p>
+            <label for="Fecha">Fecha de nacimiento</label>
+            <input type="date" id="Fecha" name="Fecha">
+        </p>
+        <p>
+            <label for="Comentario">Un comentario</label>
+            <textarea name="Comentario" id="Comentario" placeholder="Puede dejar un comentario por aquí..."></textarea>
+        </p>
+    </form>
+    <button type="submit" form="Enviar-Mensaje">Enviar</button>
+
+    
+
+
+
+
+
+</body>
+</html>
