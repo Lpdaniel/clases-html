@@ -66,9 +66,9 @@ img {
     list-style: none;
     flex-wrap: wrap;
     gap: 20px;
+    padding: 0px;
 }
 .etiquetas li {
-    padding: 10px;
     border-radius: 10px;
     border: 2px solid black;
     padding: 5px;
