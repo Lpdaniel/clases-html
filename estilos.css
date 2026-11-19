@@ -85,6 +85,13 @@ img {
     border-radius: 10px;
     box-shadow: 0px 5px 8px 2px gray;
 }
+
+@media (max-width:600px) {
+    .menu{
+        flex-direction: column;
+    }
+}
+
 .nav-link{
     display: block;
     text-decoration: none;
@@ -92,11 +99,27 @@ img {
     padding: 8px 16px;
     border-radius: 4px; 
 }
+
 .logo{
     margin: 0 10px;
     margin-right: auto;
-    font-size: 1.25rem;
+    font-size: 1.50rem;
+    
 }
+@media (max-width:600px){
+    .logo {
+        flex-direction: column;
+        margin: 0;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: gray;
+        padding: 2% 40%;
+
+    }
+}
+
+
+
 .nav-link:hover,
 .nav-link:focus {
     color: white;
