@@ -12,6 +12,7 @@ body {
 h1 {
     text-align: center;
     color: #1e6b30;
+    font-size: 2rem;
 }
 
 h2 {
@@ -22,15 +23,21 @@ h2 {
 /*  Tarjetas blancas que envuelven el contenido de cada sección  */
 .contenedores {
     background-color: white;
-    padding: 20px 40px;
-    /* padding arriba-abajo | izquierda-derecha */
+    padding: 1rem;
     box-shadow: 3px 3px 6px 3px gray;
-    font-size: 20px;
+    font-size: 1rem;
     border-radius: 25px;
-    max-width: 700px;
-    margin: 20px auto;
+    margin: 1.5rem  1rem;
     border: 2px solid #8e00b9;
 }
+@media (min-width:768px) {
+    .contenedores {
+        max-width: 700px;
+        margin: 1rem auto;
+        padding: 1.25rem 2.5rem;
+    }
+}
+
 
 .boton-enlace{
     color: rgb(194, 0, 0);
@@ -41,7 +48,7 @@ h2 {
     border-radius: 100px;
     margin-top: 10px;
     background-color: cornsilk;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 /* Efecto al tocar el enlace */
@@ -82,7 +89,9 @@ img {
     border: 5px solid black; 
     border-radius: 10px;
     box-shadow: 0px 5px 8px 2px gray;
+    flex-direction: column;
 }
+
 .nav-link{
     display: block;
     text-decoration: none;
@@ -90,11 +99,32 @@ img {
     padding: 8px 16px;
     border-radius: 4px; 
 }
-.logo{
-    margin: 0 10px;
-    margin-right: auto;
-    font-size: 30px;
+
+.logo {
+    font-size: 1.5rem;
+    align-self: stretch;
+    text-align: center;
+    background-color: gray;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0.5rem;
 }
+
+@media (min-width:600px){
+    .menu{
+        flex-direction: row;
+    }
+    .logo {
+        margin-right: auto;
+        align-self: auto;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        margin-left: 10px;
+    }
+}
+
+
 .nav-link:hover,
 .nav-link:focus {
     color: white;
