@@ -7,29 +7,45 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <main>
-        <h1>Iniciar Sesión</h1>
-    </main>
-    <form action="#">
-        <p>
-        <label for="nombre">Nombre</label>
-        <input type="email" id="nombre" name="nombre" placeholder="Ingresa tu correo..." required>
-        </p>
-        <p>
-        <label for="contrasena">Contraseña</label>
-        <input type="password" id="contrasena" name="contrasena" placeholder="Ingresa tu contraseña...">
-        </p>
-        <button>Entrar</button>
+    <main class="tarjeta">
+        <header>
+            <p class="logo">🔐IKOON</p>
+            <h1>Iniciar sesión</h1>
+        </header>
 
-        <button>Registrar</button>
+        <form class="formulario" action="#">
+            <div class="campo">
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" placeholder="tu@correo.com"
+                        required autocomplete="email">
+            </div>
 
-        <a href="">Olvidaste tu contraseña?</a>
-    </form>
+            <div class="campo">
+                <label for="contrasena">Contraseña</label>
+                <div class="caja-contrasena">
+                <input type="password" id="contrasena" name="contrasena"
+                        required minlength="8" autocomplete="current-password">
+                <button type="button" id="btn_ojo" aria-label="Mostrar contraseña">
+                    <img src="img/ojo_cls.png" alt="icon-cls-ojo" id="img-ojo">
+                </button>
+                </div>
+            </div>
+        
 
-
-
-
-
-    
+            <div class="opciones">
+                <label>
+                    <input type="checkbox" name="recordarme"> recordarme
+                </label>
+                <a href="#">¿Olvidaste tu contraseña?</a>
+            </div>
+            <div class="botones">
+            <button type="submit" id="btn_entrar">Entrar</button>
+            <a href="register.html" id="btn_registrar">Registrar</a>
+            </div>
+                
+                
+        </form>
+    </main>    
+    <script src="script.js"></script>
 </body>
 </html>
