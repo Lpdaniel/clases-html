@@ -52,8 +52,6 @@ h1 {
 }
 
 .opciones{ 
-    display: grid;
-    justify-content: center;
     width: 100%;
 }
 .botones {
@@ -95,6 +93,7 @@ h1 {
 
 .caja-contrasena{
     position: relative;
+    font-size: 20px;
 }
 .caja-contrasena input {
     width: 100%;
