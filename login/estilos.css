@@ -101,14 +101,12 @@ h1 {
     padding-right: 2.5rem;
 }
 #img-ojo {
-    position: absolute;
-    right: 0.5rem;
     width: 1.25rem;
 }
 #btn_ojo{
     position: absolute;
     right: 0.5rem;
-    top: 20%;
+    top: 50%;
     transform: translateY(-50%);
     background: none;
     border: none;
