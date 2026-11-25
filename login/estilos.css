@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+} 
+
+:root {
+    --color-primario: #5b21b6;
+    --color-fondo:#f3f4f6;
+    --color-texto:#1f2937;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.tarjeta {
+    background-color: white;
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px #00000026;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+} 
+
+.campo {
+    display:grid;
+    width: 100%;
+}
+
+.campo input {
+    border-radius: 10px;
+    height: 1.8rem;
+    border: 2px solid black;
+    box-shadow: 0 4px 12px #00000026;
+}
+
+.opciones{ 
+    width: 100%;
+}
+.botones {
+    margin: auto;
+}
+
+.botones a {
+    text-decoration: none;
+    border: 2px solid black;
+    color: black;
+    border-radius: 10px;
+    font-size: 10px;
+    padding: 0.5rem;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.botones button {
+    text-decoration: none;
+    border: 2px solid black;
+    color: black;
+    border-radius: 10px;
+    font-size: 10px;
+    padding: 0.5rem;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: #1f2937;
+    color: white;
+}
+
+#btn_entrar:hover{
+    background-color: rgb(139, 14, 255);
+}
+
+
+#btn_registrar:hover{
+    background-color: rgb(90, 0, 163);
+    color: white;
+}
+
+.caja-contrasena{
+    position: relative;
+    font-size: 20px;
+}
+.caja-contrasena input {
+    width: 100%;
+    padding-right: 2.5rem;
+}
+#img-ojo {
+    width: 1.25rem;
+}
+#btn_ojo{
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
